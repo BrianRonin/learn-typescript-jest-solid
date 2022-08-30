@@ -1,0 +1,15 @@
+pasta __tests__ é executada
+extensao de testes
+index.test.ts/js index.spec.js/ts
+npx jest = inicia os testes
+
+pra iniciar um teste dentro do arquivo utiliza
+it() || test()
+
+it('descrição', () => {
+  O teste em si
+})
+
+comando:
+npx jest --coverage
+//vai gerar o covarege

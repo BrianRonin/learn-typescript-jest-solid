@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+:root {
+  --primary: rgb(53, 28, 4);
+}
+
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.absolute {
+  position: absolute;
+}
+
+p {
+  text-align: center;
+  margin: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.container {
+  bottom: 10px;
+  position: relative;
+  background-color: black;
+  padding: 100px 40px;
+  padding-bottom: 100px;
+  border-radius: 10px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+
+form {
+  position: relative;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  background-color: black;
+  position: relative;
+
+}
+
+form input:focus {}
+
+.input {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+input,
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  border: none;
+  background-color: transparent;
+  margin-top: 15px;
+  padding: 40px;
+
+  color: white;
+  border-bottom: 1px solid chocolate;
+}
+
+input~label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: .4s;
+  color: gray;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label {
+  transform: translateY(-24px);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.input span.error {
+  display: flex;
+
+  background-color: chocolate;
+}
+
+.input span.error.active {
+  padding: 5px;
+}
+
+h1 {
+  position: relative !important;
+  font-size: 20px !important;
+  width: 100%;
+  text-align: center;
+  bottom: 60px;
+
+}
+
+video{
+  width: 100%;
+}
